@@ -1,0 +1,14 @@
+<div class="container" [class.theme-dark]="isDarkTheme" [class.theme-light]="!isDarkTheme">
+  <label class="switch" style="margin-left:700px">
+    <input type="checkbox" (change)="toggleTheme()" id="slider">
+    <span class="slider round"></span>
+  </label>
+  <div style="width:500px">
+    <app-comic-form></app-comic-form>
+    <app-comic-display [comicPanels]="comicPanels"></app-comic-display>
+  </div>
+
+</div>
+
+
+

@@ -1,0 +1,8 @@
+<!-- comic-display.component.html -->
+
+<div class="comic-container">
+    <div *ngFor="let panel of comicPanels; let i = index" class="comic-panel">
+      <img [src]="panel" alt="Comic Panel {{ i + 1 }}" />
+    </div>
+  </div>
+  
